@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>PASSWORD-GENERATOR</title>
+</head>
+<body>
+    
+    <div class="box">
+        <h1>PASSWORD GENERATOR</h1>
 
+        <div class="input-group mb-4" id="generatedPass">
+            <input type="text" class="form-control" aria-describedby="button-addon2" id="pass">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="copy()">Copy</button>
+        </div>
+
+        <label for="customRange1" class="form-label">LENGTH (<span id="count">8</span>)</label>
+        <input type="range" class="form-range" value="8" min="1" max="30" step="1" id="customRange1" onchange="slider()">
+
+        <div class="checkBox">
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Lowercase <span>(abc)</span>
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Uppercase <span>(ABC)</span>
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Numbers <span>(123)</span>
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Symbol <span>(!@#$)</span>
+                </label>
+            </div>
+
+        </div>
+        
+        <div class="popup" id="popup">
+            <p>Text Copied.</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

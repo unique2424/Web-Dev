@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(7, 7, 7);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.box {
+    background-color: #212529;
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fafafa;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box h1 {
+    font-size: 25px;
+    height: 40px;
+    padding-top: 35px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.checkBox span{
+    font-style: italic;
+    font-size: 13px;
+}
+
+#generatedPass{
+    width: 350px;
+    margin: 60px 25px;
+}
+
+.checkBox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-left: 25px;
+}
+
+.checkBox div{
+    width: 150px;
+    margin: 10px;
+}
+
+#customRange1, .form-label{
+    width: 350px;
+    margin: 0 25px;
+}
+
+
+.popup{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    top: 40%;
+    /* top: 33.4%; */
+    background-color: #19af0e;
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease-in;
+}
+
+.footer{
+    text-align: center;
+    font-size: 11px;
+    font-style: italic;
+    position: relative;
+    top: 165px;
+}
